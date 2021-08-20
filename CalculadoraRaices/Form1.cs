@@ -30,22 +30,15 @@ namespace CalculadoraRaices
                 float X = 0;
                 float Y = 0;
 
-                //Caso raices reales distintas: ----------
-                if (aux > 0)
+                //Caso raices reales: ----------
+                if (aux >= 0)
                 {
-                    Raiz1tbox.Text = (((-1 * b) + (float)Math.Sqrt(aux)) / (2 * a)).ToString();
-                    Raiz2tbox.Text = (((-1 * b) - (float)Math.Sqrt(aux)) / (2 * a)).ToString();
+                    Raiz1tbox.Text = ((-1 * b + (float)Math.Sqrt(aux)) / (2 * a)).ToString();
+                    Raiz2tbox.Text = ((-1 * b - (float)Math.Sqrt(aux)) / (2 * a)).ToString();
                 }
 
-                //Caso raices reales dobles: ----------
-                if (aux == 0)
-                {
-                    Raiz1tbox.Text = ((-1 * b) / (2 * a)).ToString();
-                    Raiz2tbox.Text = ((-1 * b) / (2 * a)).ToString();
-                }
-
-                //Caso raices imaginarias conjugadas ----------
-                if (aux < 0)
+                //Caso raices imaginarias: ----------
+                else
                 {
                     //Parte imaginaria:
                     Y = (float)Math.Sqrt(-1 * aux) / (2 * a);
@@ -56,9 +49,7 @@ namespace CalculadoraRaices
                     Raiz1tbox.Text = (X == 0) ? " + i " + (Y).ToString() : (X).ToString() + " + i " + (Y).ToString();
                     Raiz2tbox.Text = (X == 0) ? " - i " + (Y).ToString() : (X).ToString() + " - i " + (Y).ToString();
                 }
-
             }
-
         }
     }
 }
