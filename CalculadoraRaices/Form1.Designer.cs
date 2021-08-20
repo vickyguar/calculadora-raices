@@ -29,6 +29,7 @@ namespace CalculadoraRaices
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.TituloLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -74,18 +75,18 @@ namespace CalculadoraRaices
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CalculadoraRaices.Properties.Resources.Imagen;
-            this.pictureBox1.Location = new System.Drawing.Point(270, 91);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(261, 91);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(226, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // Amtbox
             // 
-            this.Amtbox.Location = new System.Drawing.Point(218, 184);
+            this.Amtbox.Location = new System.Drawing.Point(218, 208);
             this.Amtbox.Name = "Amtbox";
             this.Amtbox.Size = new System.Drawing.Size(51, 26);
             this.Amtbox.TabIndex = 2;
@@ -93,7 +94,7 @@ namespace CalculadoraRaices
             // 
             // Bmtbox
             // 
-            this.Bmtbox.Location = new System.Drawing.Point(218, 213);
+            this.Bmtbox.Location = new System.Drawing.Point(218, 237);
             this.Bmtbox.Name = "Bmtbox";
             this.Bmtbox.Size = new System.Drawing.Size(51, 26);
             this.Bmtbox.TabIndex = 3;
@@ -101,7 +102,7 @@ namespace CalculadoraRaices
             // 
             // Cmtbox
             // 
-            this.Cmtbox.Location = new System.Drawing.Point(218, 242);
+            this.Cmtbox.Location = new System.Drawing.Point(218, 266);
             this.Cmtbox.Name = "Cmtbox";
             this.Cmtbox.Size = new System.Drawing.Size(51, 26);
             this.Cmtbox.TabIndex = 4;
@@ -112,7 +113,7 @@ namespace CalculadoraRaices
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(112)))), ((int)(((byte)(92)))));
-            this.label1.Location = new System.Drawing.Point(184, 187);
+            this.label1.Location = new System.Drawing.Point(184, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 19);
             this.label1.TabIndex = 5;
@@ -123,7 +124,7 @@ namespace CalculadoraRaices
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(112)))), ((int)(((byte)(92)))));
-            this.label2.Location = new System.Drawing.Point(184, 216);
+            this.label2.Location = new System.Drawing.Point(184, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 19);
             this.label2.TabIndex = 6;
@@ -134,7 +135,7 @@ namespace CalculadoraRaices
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(112)))), ((int)(((byte)(92)))));
-            this.label3.Location = new System.Drawing.Point(184, 245);
+            this.label3.Location = new System.Drawing.Point(184, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 19);
             this.label3.TabIndex = 7;
@@ -142,7 +143,7 @@ namespace CalculadoraRaices
             // 
             // Calcular
             // 
-            this.Calcular.Location = new System.Drawing.Point(184, 285);
+            this.Calcular.Location = new System.Drawing.Point(184, 309);
             this.Calcular.Name = "Calcular";
             this.Calcular.Size = new System.Drawing.Size(75, 23);
             this.Calcular.TabIndex = 8;
@@ -153,7 +154,7 @@ namespace CalculadoraRaices
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(392, 191);
+            this.label4.Location = new System.Drawing.Point(392, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 19);
             this.label4.TabIndex = 9;
@@ -162,7 +163,7 @@ namespace CalculadoraRaices
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(392, 223);
+            this.label5.Location = new System.Drawing.Point(392, 247);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 19);
             this.label5.TabIndex = 10;
@@ -170,16 +171,16 @@ namespace CalculadoraRaices
             // 
             // Raiz1tbox
             // 
-            this.Raiz1tbox.Location = new System.Drawing.Point(453, 188);
+            this.Raiz1tbox.Location = new System.Drawing.Point(453, 212);
             this.Raiz1tbox.Name = "Raiz1tbox";
-            this.Raiz1tbox.Size = new System.Drawing.Size(112, 26);
+            this.Raiz1tbox.Size = new System.Drawing.Size(177, 26);
             this.Raiz1tbox.TabIndex = 11;
             // 
             // Raiz2tbox
             // 
-            this.Raiz2tbox.Location = new System.Drawing.Point(453, 220);
+            this.Raiz2tbox.Location = new System.Drawing.Point(453, 244);
             this.Raiz2tbox.Name = "Raiz2tbox";
-            this.Raiz2tbox.Size = new System.Drawing.Size(112, 26);
+            this.Raiz2tbox.Size = new System.Drawing.Size(177, 26);
             this.Raiz2tbox.TabIndex = 12;
             // 
             // Form1
@@ -203,6 +204,7 @@ namespace CalculadoraRaices
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(112)))), ((int)(((byte)(92)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Calculadora de raices";
             this.panel1.ResumeLayout(false);
